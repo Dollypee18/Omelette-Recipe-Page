@@ -1,0 +1,93 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background-color: hsl(30, 54%, 90%);
+}
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px hsl(228, 45%, 44%, 0.2);
+  width: 350px;
+  text-align: left;
+  padding: 20px;
+}
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+h1 h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.preparation-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.nutrition-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.nutrition-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.nutrition-list li:last-child {
+  border-bottom: none;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.instructions,
+.ingredients {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .card {
+    max-width: 700px;
+    text-align: left;
+    padding: 40px;
+  }
+
+  img {
+    border-radius: 15px;
+  }
+
+  .card-content {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .nutrition-list li {
+    font-size: 18px;
+  }
+}
